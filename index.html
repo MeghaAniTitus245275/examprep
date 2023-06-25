@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Chat Application</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="chat-container">
+        <div id="chat-messages" class="chat-messages">
+            <ul>
+                <li th:each="message : ${messages}" th:text="${message}"></li>
+            </ul>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="message-input" placeholder="Type your message">
+            <button id="send-button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+/* styles.css */
+
+.chat-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chat-messages {
+    max-height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+.chat-input input[type="text"] {
+    width: 70%;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.chat-input button {
+    padding: 5px 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
